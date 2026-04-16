@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Orbitron, Inter } from "next/font/google";
 import "./globals.css";
 import BitsBackground from "@/components/BitsBackground";
+import { Analytics } from '@vercel/analytics/next';
 
 const orbitron = Orbitron({
   variable: "--font-orbitron",
@@ -31,6 +32,7 @@ export default function RootLayout({
       <body>
         <BitsBackground />
         {children}
+        <Analytics />
       </body>
     </html>
   );

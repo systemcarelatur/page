@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import ShapoWidget from '../components/ShapoWidget';
 
 export default function Home() {
   return (
@@ -145,6 +146,14 @@ export default function Home() {
           <a href="https://www.youtube.com/@systemcarelaturlaptoprepair" target="_blank" rel="noreferrer" className="tron-btn tron-font">
             View All Videos on YouTube
           </a>
+        </div>
+      </section>
+
+      {/* Google Business Reviews Showcase */}
+      <section className="container section" style={{ padding: '0 20px' }}>
+        <h2 className="tron-title tron-font" style={{ fontSize: '2.5rem', textAlign: 'center', marginBottom: '40px', paddingTop: '-40px', paddingBottom: '-40px' }}>What Our Customers Say</h2>
+        <div className="tron-card">
+          <ShapoWidget />
         </div>
       </section>
 
